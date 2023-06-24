@@ -1,0 +1,297 @@
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    border: 0;
+
+}
+body{
+     background-image: url("image4.jpg");
+     font-family: verdana;
+     color: white;
+
+}
+:root{
+    --pageColor: rgb(226, 157, 247);
+    --fillcolor: rgb(56, 40, 61);
+}
+
+/* header style */
+header {
+    width: 100%;
+    height: 90px;
+    position: relative;
+    background-color: transparent;
+     color:azure;
+    padding-bottom: 10px;
+}
+.heading{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.smenu{
+    position:relative;
+    top: 5px;
+    float:right;
+    
+
+}
+.item{
+    margin: 20px;
+    border-radius: 50%;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+    color: white;
+    padding: 30px;
+    transition: .3s;
+    cursor:pointer;
+    border-bottom: 3px solid orange;
+
+
+}
+.item:hover{
+    transition: .3s;
+    border-bottom: 3px solid var(--pageColor);
+    border-radius: 0px;
+
+}
+/* input type only for the type text and time */
+input[type=text],input[type=time]{
+    background-color: transparent;
+    border-bottom: 3px solid blueviolet;
+    outline: none;
+    text-transform: capitalize;
+}
+/* input type for the submit */
+input[type=submit]{
+    padding: 10px;
+    background-color: blueviolet;
+    color: rgb(226,157, 247);
+    transition: 0.3s;
+    border-radius: 4px;
+    position: relative;
+    z-index: 3;
+}
+/* onmouseover submit */
+input[type=submit]:hover{
+    letter-spacing: 3px;
+    padding: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+   
+}
+
+label::after{
+    content: "*";
+    color: blueviolet;
+}
+
+
+
+/* footer of the page */
+footer{
+    min-width: 100%;
+    height: 500px;
+    background-image: linear-gradient(to right,var(--pageColor),blueviolet);
+    position: relative;
+    left: auto;
+    border-top: 5px solid rgb(226, 157, 247);
+
+}
+/* position the main page to the center */
+.main{
+   
+    background-color:var(--fillcolor);
+    padding: 30px;
+    border-radius: 20px;
+    float: left;
+    margin: 75px;
+    display: block;
+    box-shadow: -5px 10px 5px -5px rgb(226, 157, 247);
+    width:350px;
+    position: relative;
+
+}
+/* Day of the of the subject  */
+.day{
+    background-color:transparent;
+    padding: 40px;
+    display: block;
+}
+.display-center{
+    
+    position: relative;
+    z-index: 3;
+   /* top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+     */
+}
+
+
+.inex{
+    z-index: 100;
+}
+/* Droplet */
+.explain{
+    width: 800px;
+    height: 400px;
+    background-color: transparent;
+    position: absolute;
+    display: block;
+    box-shadow: inset 5px 5px 5px 5px;
+    left:10%;
+    z-index:1;
+    border-radius: 20% 40% 50% 90%/ 90% 40% 20% 80%;
+    transition: .5s;
+
+}
+
+
+.explain:hover{
+    transition: .5s;
+    border-radius: 90% 40% 80% 20%/ 20% 70% 80% 40%;
+    height: 600px;
+
+    
+}
+
+/* droplet text */
+figure{
+    width: 400px;
+    float:right;
+    position: relative;
+    top: 200px;
+    left: -30px;
+    font-size: 20px;
+    font-weight: 900;
+    transition-duration:.5s;
+    font-family:cursive;
+    
+}
+
+b{
+    color:white;
+    font-size:30px;
+}
+
+/* sticky page end part */
+
+.pageEnd{
+    width: 100%;
+    height: 70px;
+    background-color: var(--fillcolor);
+    position: fixed;
+    left: auto;
+    z-index: 100;
+    border-radius: 10px 10px 0px 0px;
+    border-color: var(--pageColor);
+    border-top: 3px;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* footer elements */
+.pan{
+    display: block;
+    padding: 20px;
+}
+
+.designer{
+    display: block;
+    padding: 20px;
+
+}
+
+
+table{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+table::before{
+    content: "MY WEEKLY TIME-TABLE";
+    background-color: var(--fillcolor);
+    padding:10px;
+    border-radius: 10px;
+    /* width: 100px; */
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: center;
+    top:-30px;
+    position: absolute;
+}
+th{
+    color: var(--pageColor);
+    margin: 10px;
+    padding: 10px;
+}
+
+td{
+    padding: 5px;
+}
+.download__{
+    display: none;
+    top: 520px;
+    position: absolute;
+    margin:10px
+
+}
+
+.download_link{
+    padding: 7px;
+    border-radius: 10px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:420px) {
+    .main{
+        margin:13px;
+        margin-top: 20px;
+        width:320px
+    }
+    .explain{
+        width:300px;
+    }
+    figure{
+        display:none;
+    }
+    .pan{
+        display: none;
+    }
+    
+   b{
+    font-size: 15px;
+   }
+   .item{
+    padding: 10px;
+}
+}

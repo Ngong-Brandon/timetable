@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css" type="text/css">
+    <link rel="Shortcut icon" href="logo.png" type="x-icon">
+    <title>MY-TIMETABLE</title>
+</head>
+<body>
+
+    <!-- Header for the title  -->
+    <header>
+        <div class="head">
+
+            <h2 class="heading">⏰TIMETABLE</h2>
+            <p class="sheading" >This goes only for students who study one subject per day.</p>
+
+        </div>
+        <div class="smenu">
+            <span class="item"><b>&#9993;</b></span>
+            <span class="item"><b>&#9000;</b></span>
+            <span class="item"><b>&#9112;</b></span>
+
+        </div>
+    </header>
+
+    <!-- the main content of the time table -->
+
+    <div id="Table"></div>
+    <div id="Tablephone"></div>
+<div class="download__" id="downloaddiv">
+   Click the download button below to download the html code of the time table.
+
+
+    <a onclick="downloadtable()"   class="download_link" id="download_link"><b>&#11147;</b> Download</a>
+
+</div>
+
+    <div class="display-center" id="reading">
+
+        <form action="table.php" method="POST">
+            <div class="main" id="main">
+
+                <center><h1 class="day" id="day">MONDAY</h1></center>
+        
+                <form action="table.php" metthod = "POST">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" required >
+                   <br><br>
+                   <label for="time">Time</label>
+                    <input type="time" name="time" id="time" required>
+                    <br><br>
+                
+                
+        
+
+                            
+                </div>
+
+                <div class="main" id="main">
+
+                    <center><h1 class="day" id="day">TUESDAY</h1></center>
+            
+                    <form action="table.php" metthod = "POST">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" required >
+                       <br><br>
+                       <label for="time">Time</label>
+                        <input type="time" name="time" id="time" required>
+                        <br><br>
+                    
+                    
+            
+    
+                                
+                    </div>
+
+                    <div class="main" id="main">
+
+                        <center><h1 class="day" id="day">WEDNESDAY</h1></center>
+                
+                        <form action="table.php" metthod = "POST">
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject" id="subject" required >
+                           <br><br>
+                           <label for="time">Time</label>
+                            <input type="time" name="time" id="time" required>
+                            <br><br>
+                        
+                        
+                
+        
+                                    
+                        </div>
+
+
+                        <div class="main" id="main">
+
+                            <center><h1 class="day" id="day">THURSDAY</h1></center>
+                    
+                            <form action="table.php" metthod = "POST">
+                                <label for="subject">Subject</label>
+                                <input type="text" name="subject" id="subject" required >
+                               <br><br>
+                               <label for="time">Time</label>
+                                <input type="time" name="time" id="time" required>
+                                <br><br>
+                            
+                            
+                    
+            
+                                        
+                            </div>
+
+                            <div class="main" id="main">
+
+                                <center><h1 class="day" id="day">FRIDAY</h1></center>
+                        
+                                <form action="table.php" metthod = "POST">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" name="subject" id="subject" required >
+                                   <br><br>
+                                   <label for="time">Time</label>
+                                    <input type="time" name="time" id="time" required>
+                                    <br><br>
+                                
+                                
+                        
+                
+                                            
+                                </div>
+
+                                <div class="main" id="main">
+
+                                    <center><h1 class="day" id="day">SATURDAY</h1></center>
+                            
+                                    <form action="table.php" metthod = "POST">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" name="subject" id="subject" required >
+                                       <br><br>
+                                       <label for="time">Time</label>
+                                        <input type="time" name="time" id="time" required>
+                                        <br><br>
+                                    
+                                    
+                            
+                    
+                                                
+                                    </div>
+
+                                    <div class="main inex" id="main" >
+
+                                        <center><h1 class="day" id="day">SUNDAY</h1></center>
+                                
+                                        <form action="table.php" metthod = "POST">
+                                            <label for="subject">Subject</label>
+                                            <input type="text" name="subject" id="subject" required >
+                                           <br><br>
+                                           <label for="time">Time</label>
+                                            <input type="time" name="time" id="time" required>
+                                            <br><br>
+                                        
+                                        
+                                
+                                                                <center>  <input type="submit" name="submit" value="CREATE TABLE" id="create"></center>
+                        
+                                                    
+                    </div>      
+            </div>
+        </form>
+
+    </div>
+
+<div class="explain" id="explain">
+<figure>
+    <q>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam ut sunt, ad amet aspernatur eos facilis aperiam voluptatum maxime ratione!
+        
+    </q>
+
+</figure>
+
+</div>
+
+    <!-- footer which can show ads or notification -->
+    <footer id="footer">
+        <div>
+
+        </div>
+    </footer>
+    <div class="pageEnd" id="pageEnd">
+
+        <span class="pan"><b> &#11146;</b> MY SCHOOL TIMETABLE</span>
+        <span class="pan">Other bigger projects coming soon. <b>&#8986;</b></span>
+        <span class="designer"><b> &#11162;</b>BY. <cite>Ngong Brandon Fonchang</cite></span>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
